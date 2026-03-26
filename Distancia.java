@@ -15,7 +15,7 @@ public class Distancia {
     System.out.print("Digite a quarta coordenada (y2): ");
     y2 = sc.nextDouble();
     
-    distancia = raioT * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
+    distancia = raioT * (Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
     System.out.print("A distância entre esses pontos é de " + distancia + " km");
     sc.close();
     
